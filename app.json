@@ -1,0 +1,54 @@
+{
+    "name": "WordPress Heroku",
+    "description": "Template for deploying WordPress 5.x to Heroku",
+    "keywords": [
+        "wordpress"
+    ],
+    "website": "https://wordpress.org/",
+    "repository": "https://github.com/tobeherenow/wordpress-heroku",
+    "success_url": "/",
+    "env": {
+        "AUTH_KEY": {
+            "description": "A secret key to increase security of stored information.",
+            "generator": "secret"
+        },
+        "SECURE_AUTH_KEY": {
+            "description": "A secret key to increase security of stored information.",
+            "generator": "secret"
+        },
+        "LOGGED_IN_KEY": {
+            "description": "A secret key to increase security of stored information.",
+            "generator": "secret"
+        },
+        "NONCE_KEY": {
+            "description": "A secret key to increase security of stored information.",
+            "generator": "secret"
+        },
+        "AUTH_SALT": {
+            "description": "A secret key to increase security of stored information.",
+            "generator": "secret"
+        },
+        "SECURE_AUTH_SALT": {
+            "description": "A secret key to increase security of stored information.",
+            "generator": "secret"
+        },
+        "LOGGED_IN_SALT": {
+            "description": "A secret key to increase security of stored information.",
+            "generator": "secret"
+        },
+        "NONCE_SALT": {
+            "description": "A secret key to increase security of stored information.",
+            "generator": "secret"
+        }
+    },
+    "addons": [
+        "cleardb",
+        "memcachier",
+        "papertrail"
+    ],
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-php"
+        }
+    ]
+}
