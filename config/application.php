@@ -94,14 +94,13 @@ if (env('CLEARDB_DATABASE_URL')) {
 }
 
 global $memcached_servers;
-$memcached_server_url = explode(env(':', 'MEMCACHIER_SERVERS'))
-$memcached_servers = array( array( $memcached_server_url[0], 11211 ) );
+$memcached_servers = array( array( 'mc3.dev.ec2.memcachier.com', 11211 ) );
 
 global $memcached_username;
-$memcached_username = env('MEMCACHIER_USERNAME');
+$memcached_username = '35637C';
 
 global $memcached_password;
-$memcached_password = env('MEMCACHIER_PASSWORD');
+$memcached_password = '205F83DE82ACBBAF7911F74C84DB41F6';
 
 /**
  * Authentication Unique Keys and Salts
