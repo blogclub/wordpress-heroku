@@ -43,8 +43,7 @@
     },
     "addons": [
         "cleardb",
-        "memcachier",
-        "papertrail"
+        "memcachier"
     ],
     "buildpacks": [
         {
