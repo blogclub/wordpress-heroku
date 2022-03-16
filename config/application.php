@@ -93,15 +93,6 @@ if (env('CLEARDB_DATABASE_URL')) {
     Config::define('DB_HOST', isset($dsn->port) ? "{$dsn->host}:{$dsn->port}" : $dsn->host);
 }
 
-global $memcached_servers;
-$memcached_servers = array( array( 'mc3.dev.ec2.memcachier.com', 11211 ) );
-
-global $memcached_username;
-$memcached_username = '35637C';
-
-global $memcached_password;
-$memcached_password = '205F83DE82ACBBAF7911F74C84DB41F6';
-
 /**
  * Authentication Unique Keys and Salts
  */
