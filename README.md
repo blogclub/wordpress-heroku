@@ -2,7 +2,7 @@
 
 This will set up a fresh WordPress `5.9.2` install on Heroku. 
 
-**Demo: https://tobeherenow.herokuapp.com/**
+**Demo: https://tobeherenow.herokuapp.com**
 
 * `nginx` - Nginx for serving web content.
 * `PHP` - PHP-FPM for process management.
