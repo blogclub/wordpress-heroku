@@ -1,6 +1,6 @@
-## Setup WordPress **5.9.1** on Heroku
+## Setup WordPress on Heroku
 
-This will set up a fresh WordPress **5.9.1** install on Heroku.
+This will set up a fresh WordPress `5.9.2` install on Heroku.
 
 * `nginx` - Nginx for serving web content.
 * `PHP` - PHP-FPM for process management.
