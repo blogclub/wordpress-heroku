@@ -49,10 +49,22 @@ if (file_exists($root_dir . '/.env')) {
 define('WP_ENV', env('WP_ENV') ?: 'production');
 
 /**
+ * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer
+ * See https://codex.wordpress.org/Function_Reference/is_ssl#Notes
+ */
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
+
+/**
  * URLs
  */
-Config::define('WP_HOME', env('WP_HOME'));
-Config::define('WP_SITEURL', env('WP_SITEURL'));
+$_http_host_schema = array_key_exists('HTTPS', $_SERVER) && $_SERVER['HTTPS'] == 'on' ? 'https' : 'http';
+$_http_host_name = array_key_exists('HTTP_HOST', $_SERVER) ? $_SERVER['HTTP_HOST'] : 'localhost';
+$_server_http_url = $_http_host_schema."://".$_http_host_name;
+
+Config::define('WP_HOME', env('WP_HOME') ?: $_server_http_url);
+Config::define('WP_SITEURL', env('WP_SITEURL') ?: $_server_http_url."/wp");
 
 /**
  * Custom Content Directory
@@ -112,14 +124,6 @@ Config::define('WP_DEBUG_DISPLAY', false);
 Config::define('WP_DEBUG_LOG', false);
 Config::define('SCRIPT_DEBUG', false);
 ini_set('display_errors', '0');
-
-/**
- * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer
- * See https://codex.wordpress.org/Function_Reference/is_ssl#Notes
- */
-if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
-    $_SERVER['HTTPS'] = 'on';
-}
 
 $env_config = __DIR__ . '/environments/' . WP_ENV . '.php';
 
