@@ -1,6 +1,6 @@
-## Setup WordPress on Heroku
+## Setup WordPress **5.9.1** on Heroku
 
-This will set up a fresh WordPress install on Heroku with Cloudinary support
+This will set up a fresh WordPress **5.9.1** install on Heroku.
 
 * `nginx` - Nginx for serving web content.
 * `PHP` - PHP-FPM for process management.
@@ -14,8 +14,6 @@ Use the Deploy to Heroku button
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-## Change log
-* Update to 5.9.1
 
 ## Sources
 
