@@ -93,6 +93,8 @@ if (env('CLEARDB_DATABASE_URL')) {
     Config::define('DB_HOST', isset($dsn->port) ? "{$dsn->host}:{$dsn->port}" : $dsn->host);
 }
 
+define('WP_CACHE', true);
+
 /**
  * Authentication Unique Keys and Salts
  */
