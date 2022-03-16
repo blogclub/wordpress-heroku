@@ -72,8 +72,8 @@ Config::define('DB_CHARSET', 'utf8mb4');
 Config::define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
 
-if (env('DATABASE_URL')) {
-    $dsn = (object) parse_url(env('DATABASE_URL'));
+if (env('CLEARDB_DATABASE_URL')) {
+    $dsn = (object) parse_url(env('CLEARDB_DATABASE_URL'));
 
     Config::define('DB_NAME', substr($dsn->path, 1));
     Config::define('DB_USER', $dsn->user);

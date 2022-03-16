@@ -1,6 +1,6 @@
-## Ssetup WordPress on Heroku
+## Setup WordPress on Heroku
 
-This will set up a fresh WordPress install on Heroku with the newly released [Heroku Buildpack for PHP](https://github.com/heroku/heroku-buildpack-php).
+This will set up a fresh WordPress install on Heroku with Cloudinary support
 
 * `nginx` - Nginx for serving web content.
 * `PHP` - PHP-FPM for process management.
