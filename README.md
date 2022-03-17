@@ -9,6 +9,7 @@ This will set up a fresh WordPress `5.9.2` install on Heroku.
 * `WordPress` - Downloaded from the Github WordPress Repo.
 * `MySQL` - ClearDB for the MySQL backend.
 * `MemCachier` - MemCachier for the memcached backend.
+* `Cloudinary` - Cloudinary for the media backend
 
 ## Heroku Button
 
