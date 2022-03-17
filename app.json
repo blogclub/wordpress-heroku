@@ -1,11 +1,12 @@
 {
-    "name": "WordPress Heroku",
-    "description": "Template for deploying WordPress 5.x to Heroku",
+    "name": "WordPress on Heroku",
+    "description": "Deploying WordPress 5.9.2 to Heroku",
     "keywords": [
         "wordpress"
     ],
-    "website": "https://wordpress.org/",
+    "website": "https://wp-on-heroku.herokuapp.com/",
     "repository": "https://github.com/tobeherenow/wordpress-heroku",
+    "logo": "https://s.w.org/style/images/about/WordPress-logotype-simplified.png",
     "success_url": "/",
     "env": {
         "AUTH_KEY": {
