@@ -44,7 +44,8 @@
     },
     "addons": [
         "cleardb",
-        "memcachier"
+        "memcachier",
+        "cloudinary"
     ],
     "buildpacks": [
         {

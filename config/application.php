@@ -94,6 +94,7 @@ if (env('CLEARDB_DATABASE_URL')) {
 }
 
 define('WP_CACHE', true);
+define( 'CLOUDINARY_CONNECTION_STRING', env('CLOUDINARY_URL'));
 
 /**
  * Authentication Unique Keys and Salts
