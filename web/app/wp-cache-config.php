@@ -9,8 +9,6 @@ $wp_cache_home_path = '/';
 $wp_cache_slash_check = 1;
 $cache_page_secret = 'd490f99019ee571d284197da8ee7fab8';
 $cache_time_interval = '600';
-if ( ! defined('WPCACHEHOME') )
-        define( 'WPCACHEHOME', WP_CONTENT_DIR . "/plugins/wp-super-cache/" );
 
 $cache_compression = 0; // Super cache compression
 $cache_enabled = true;
