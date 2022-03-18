@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c73441f505601149a380d989f64c5e0",
+    "content-hash": "51cf180ae64d0a6c6dffb5d55b3591e8",
     "packages": [
         {
             "name": "composer/installers",
@@ -1078,6 +1078,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/cloudinary-image-management-and-manipulation-in-the-cloud-cdn/"
+        },
+        {
+            "name": "wpackagist-plugin/custom-css-js",
+            "version": "3.39",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/custom-css-js/",
+                "reference": "tags/3.39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-css-js.3.39.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-css-js/"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
