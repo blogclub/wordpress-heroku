@@ -95,7 +95,7 @@ if (env('CLEARDB_DATABASE_URL')) {
 
 define('WP_CACHE', true);
 define( 'CLOUDINARY_CONNECTION_STRING', env('CLOUDINARY_URL'));
-
+define('WPCACHEHOME', "/app/web/app/plugins/wp-super-cache");
 /**
  * Authentication Unique Keys and Salts
  */
